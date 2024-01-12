@@ -77,9 +77,9 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme("colors.primary.600"),
+              color: "var(--tw-prose-links)",
               "&:hover": {
-                color: theme("colors.primary.500"),
+                color: "var(--tw-prose-links)",
               },
             },
             dd: {
@@ -106,6 +106,16 @@ module.exports = {
               border: "solid 1px " + theme("colors.neutral.500"),
               borderBottomWidth: "2px",
               padding: "1px 3px",
+            },
+            code: {
+              color: 'var(--tw-prose-code)',
+              fontWeight: '600',
+            },
+            'code::before': {
+              content: '',
+            },
+            'code::after': {
+              content: '',
             },
             "li > input:first-child": {
               marginTop: "auto",
